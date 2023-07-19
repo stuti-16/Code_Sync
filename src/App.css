@@ -1,0 +1,135 @@
+.homePageWrapper{
+  height: 100vh; /*taki puri screen pr height rehe*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /*this will only give color to text content, anchor(link
+  ) ka color alg se mention hoga */
+}
+
+.formWrapper{
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px; /*cebter box corner se round hai*/
+  width: 400px;
+  max-width: 90%; /*it will stick to 90% of its width jb window ko side se shrink krege toh*/
+
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+footer a{
+  color: #4aee88;
+}
+
+.inputGroup{
+  display: flex; /*ek line me aa jati hai cheeze */
+  flex-direction: column;
+}
+.mainLabel{
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.homePageLogo {
+  height: 80px;
+  margin-bottom: 30px;
+}
+.inputBox {
+  padding: 10px; /*box ka size bda ho jata hai*/
+  border-radius: 5px; /*border round ho jate hai*/
+  outline: none;
+  border: none;
+  margin-bottom: 14px; /*box ke beech ka space*/
+  background: #eee; /*offwhite color of the box*/
+  font-size: 16px; /*jo type krege inside the box voh uska size 16px hoga*/
+  font-weight: bold; /*jo type krege inside the box voh bold hoga*/
+}
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; /*jab cursor leker jayege toh hand bna hoga */
+  transition: all 0.3s ease-in-out;
+}
+.joinBtn,
+.leaveBtn {
+    background: #4aed88;
+    width: 100px; /*join button ki width choti hui, plehe voh username vale box jitni thi  */
+    margin-left: auto; /*box left me aya*/
+}
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #2b824c;
+}
+
+.createInfo {
+    margin: 0 auto; /*center me lane ke liye, top/bottom se 0 and left/right se auto */
+    margin-top: 20px;
+}
+.createNewBtn {
+  color: #4aed88;
+  text-decoration: none; /*bydefault underline chla jaye*/
+  border-bottom: 1px solid #4aed88; /*explicitly underline de rehe hai thori fancy*/
+  transition: all 0.3s ease-in-out;
+}
+.createNewBtn:hover,
+footer a:hover {
+    color: #368654;
+    border-color: #368654; /*underline ka hover hai*/
+}
+.mainWrap {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+.aside {
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.asideInner {
+  flex: 1;
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+.userName {
+  margin-top: 10px;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+
+.logoImage {
+  height: 60px;
+}
+
+.leaveBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+.CodeMirror {
+  min-height: calc(100vh - 20px); /* taki scrole na aaye khali 100vh krege toh scrol ata hai cox uper neeche space hai 20px ka */
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
